@@ -9,10 +9,10 @@ with st.form("my_form"):
                           step=0.01,
                           value=7.8)
     eos = st.number_input("Eosinophil %",
-                          min_value=0,
-                          max_value=75,
-                          step=1,
-                          value=10)
+                          min_value=0.0,
+                          max_value=75.0,
+                          step=0.01,
+                          value=12.5)
 
     # Every form must have a submit button.
     submitted = st.form_submit_button("Calculate")
