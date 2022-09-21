@@ -19,4 +19,4 @@ with st.form("my_form"):
     if submitted:
         wbcm = wbc * 1000
         eosm = eos / 100
-        st.subheader(f"Eosinophil count: {wbcm*eosm}")
+        st.subheader(f"Eosinophil count: {round(wbcm*eosm),2}")
